@@ -89,4 +89,25 @@ In the loopback configuration, the serial output of the UART transmitter is dire
             |
             v
        Received Data
+---
+## Simulation Results
 
+The UART modules were simulated and verified using Icarus Verilog and EPWave.
+
+### UART Transmitter
+
+The transmitter waveform verifies the FSM state transitions, baud-rate counting, bit counting, shift-register operation, and serial TX output.
+
+![UART TX Waveform](uart_tx_waveform.png)
+
+### UART Receiver
+
+The receiver waveform verifies start-bit detection, data reception, bit counting, shift-register operation, data reconstruction, and stop-bit validation.
+
+![UART RX Waveform](uart_rx_waveform.png)
+
+### UART Loopback
+
+The loopback waveform verifies the complete TX-to-RX communication path.
+
+![UART Loopback Waveform](uart_loopback_waveform.png)
