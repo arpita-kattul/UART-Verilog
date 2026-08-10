@@ -133,3 +133,11 @@ The UART loopback test successfully verified end-to-end communication between th
 
 The received data matched the transmitted data for all test cases, with `data_valid = 1` and `framing_error = 0`.
 
+## Tools & Technologies
+
+- Verilog HDL
+- Icarus Verilog
+- EDA Playground
+- EPWave
+- GitHub
+
