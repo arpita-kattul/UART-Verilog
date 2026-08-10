@@ -159,3 +159,7 @@ The received data matched the transmitted data for all test cases, with `data_va
 - Testbench development
 - Functional verification
 
+## Author
+
+**Arpita Kattul**
+
