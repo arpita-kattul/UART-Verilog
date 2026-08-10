@@ -147,3 +147,15 @@ The received data matched the transmitted data for all test cases, with `data_va
 - EPWave
 - GitHub
 
+## Key Concepts Demonstrated
+
+- Finite State Machines (FSM)
+- Sequential and combinational logic
+- Shift registers
+- Baud-rate generation
+- Bit counting
+- Serial communication
+- RTL design
+- Testbench development
+- Functional verification
+
