@@ -117,3 +117,19 @@ The loopback waveform verifies the complete TX-to-RX communication path and conf
 | `uart_loopback.v` | UART TX and RX integrated loopback design |
 | `uart_loopback_tb.v` | Testbench for UART loopback verification |
 
+## Verification
+
+The UART designs were verified using dedicated Verilog testbenches.
+
+### Test Cases
+
+| Test Case | Transmitted Data | Expected Received Data | Result |
+|-----------|------------------|------------------------|--------|
+| Case 1 | `8'hA5` | `8'hA5` | PASS |
+| Case 2 | `8'h00` | `8'h00` | PASS |
+| Case 3 | `8'hFF` | `8'hFF` | PASS |
+
+The UART loopback test successfully verified end-to-end communication between the transmitter and receiver.
+
+The received data matched the transmitted data for all test cases, with `data_valid = 1` and `framing_error = 0`.
+
