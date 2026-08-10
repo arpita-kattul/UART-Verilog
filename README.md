@@ -1,6 +1,3 @@
-# UART-Verilog
-UART Transmitter, Receiver and Loopback implementation in Verilog
-
 # UART Communication System using Verilog
 
 A UART communication system designed and verified using Verilog HDL.
@@ -23,8 +20,9 @@ The designs use FSM-based control, shift registers, baud-rate counters, and bit 
 
 The UART transmission uses the following frame format:
 
-Idle | Start | 8 Data Bits | Stop
-  1  |   0   |   LSB First |  1
+| Idle | Start | 8 Data Bits | Stop |
+|------|-------|-------------|------|
+| 1    | 0     | LSB First   | 1    |
 
 Each transmitted byte consists of:
 
